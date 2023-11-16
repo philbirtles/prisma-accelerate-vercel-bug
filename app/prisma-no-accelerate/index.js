@@ -4,5 +4,5 @@ if (!globalThis.prisma) {
   globalThis.prismaNoAccelerate = new PrismaClient();
 }
 
-const prismaClient = globalThis.prisma;
+const prismaClient = globalThis.prismaNoAccelerate;
 export { prismaClient as prismaNoAccelerate };
