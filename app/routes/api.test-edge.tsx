@@ -1,9 +1,9 @@
-import { prisma } from "../prisma";
+import { prismaEdge } from "../prisma-edge";
 import { defer, json, type LoaderFunctionArgs } from "@vercel/remix";
 
-export const config = { runtime: "nodejs" };
+export const config = { runtime: "edge" };
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  const org1 = await prisma.organisation.findFirst();
+  const org1 = await prismaEdge.organisation.findFirst();
   return json({ org1 });
 };
