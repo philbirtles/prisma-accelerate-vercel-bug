@@ -12,24 +12,16 @@ export default function Index() {
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <ul>
         <li>
-          <a href="/api/test" target="_blank">
-            Serverless, standard
-          </a>
+          <Link to="/api/test">Serverless, standard</Link>
         </li>
         <li>
-          <a href="/api/test-edge" target="_blank">
-            Edge, standard
-          </a>
+          <Link to="/api/test-edge">Edge, standard</Link>
         </li>
         <li>
-          <a href="/api/test-awaited" target="_blank">
-            Serverless, awaited
-          </a>
+          <Link to="/api/test-awaited">Serverless, awaited</Link>
         </li>
         <li>
-          <a href="/api/no-accelerate" target="_blank">
-            Prisma without accelerate
-          </a>
+          <Link to="/api/no-accelerate">Prisma without accelerate</Link>
         </li>
       </ul>
     </div>
