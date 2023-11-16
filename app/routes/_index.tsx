@@ -20,6 +20,9 @@ export default function Index() {
         <li>
           <Link to="/api/test-awaited">Serverless, awaited</Link>
         </li>
+        <li>
+          <Link to="/api/no-accelerate">Prisma without accelerate</Link>
+        </li>
       </ul>
     </div>
   );
