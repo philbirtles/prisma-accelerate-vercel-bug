@@ -1,5 +1,5 @@
 import { prismaEdge } from "../prisma-edge";
-import { defer, json, type LoaderFunctionArgs } from "@vercel/remix";
+import { json, type LoaderFunctionArgs } from "@vercel/remix";
 
 export const config = { runtime: "edge" };
 

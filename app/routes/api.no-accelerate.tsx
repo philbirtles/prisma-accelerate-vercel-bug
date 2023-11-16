@@ -1,4 +1,4 @@
-import { prisma } from "../prisma";
+import { prismaNoAccelerate as prisma } from "../prisma-no-accelerate";
 import { json, type LoaderFunctionArgs } from "@vercel/remix";
 
 export const config = { runtime: "nodejs" };
